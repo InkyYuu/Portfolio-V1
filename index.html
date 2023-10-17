@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Etudiant en BUT Informatique à l'IUT de Marne-la-vallée. Objetif : Programmeur gameplay. Bienvenue sur mon site web regroupant les informations importantes sur moi.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="BREDEAU Kellian">
+    <meta name="Keyword" content="Portfolio, Kellian, Bredeau, Etudiant">
+
+    <title>Home | Kellian BREDEAU</title>
+
+    <link rel="icon" href="./img/pdp.png">
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+
+<body>
+    <header>
+        <div class="scroll"></div>
+        <!-- Création de la barre de navigation avec les différentes rubriques -->
+        <navbar class="barre-navigation">
+                <ul class="navigation">
+                    <div class="close"></div>
+                    <div class="logo"><img src="img/pdp.png" width="150px"></div>
+                    <li class="item-nav"><a href="#presentation">Présentation</a></li>
+                    <li class="item-nav"><a href="#interets">Centres d'intêret</a></li>
+                    <li class="item-nav"><a href="#projets">Projets</a></li>
+                    <li class="item-nav"><a href="#professionel">Côté professionel</a></li>
+                    <li class="item-nav"><a href="#competences">Compétences</a></li>
+                    <li class="item-nav"><a href="#scolaire">Parcours de formation</a></li>
+                </ul>
+        </navbar>
+        <div class="open"></div>
+    </header>
+
+    <div class="box-partage-ouvrir">
+        <span width=30px class="open-partage">Partager</span>
+    </div>
+
+    <div class="partager">
+        <div class="box-partager">
+            <div class="box">
+                <a href="img/QR-Code.png" download="Kellian.Awooo-Portfolio.png">
+                    <div class="box-partage box-qrcode">
+                        <img src="img/qr-code-icon.png">
+                        <p>QR Code</p>
+                    </div>
+                </a>
+                <button id="copy">
+                    <div class="box-partage box-lien ">
+                        <img src="img/javascript-icon.svg">
+                        <p>Lien</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="box-partage-fermer">
+            <span width=30px class="open-partage">Fermer</span>
+        </div>
+    </div>
+
+    <main>
+        <hr id="presentation">
+        <div class="part">
+            <div class="contenu">
+                <h1 >Kellian BREDEAU</h1>
+                <h3>📍 En banlieue parisienne</h3>
+                <br>
+                <p style="text-align: justify;">Bonjour, je m'appelle BREDEAU Kellian, 19 ans et étudiant en 2ème année de BUT Informatique</p>
+                <p style="text-align: justify;">Gros mangeur de cartes graphiques et de codes</p>
+                <h3>📎 Contactez-moi</h3>
+                <div class="contact-button">
+                    <div class="contact ct-outlook">
+                        <a href="mailto:kellianbre@outlook.fr"><img src="img/outlook-icon.svg"></a>
+                    </div>
+                    <div class="contact ct-github">
+                        <a href="https://github.com/InkyYuu" target="_blank"><img src="img/github-icon.svg"></a>
+                    </div>
+                    <div class="contact ct-discord">
+                        <a href="https://discordapp.com/channels/@me/722887292850798633" target="_blank"><img src="img/discord-icon.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr id="interets">
+        <div class="part">
+            <div class="contenu">
+                <h2 >Centres d'intêret</h2>
+                <div class="multibox">
+                    <div class="carte mb-grissard"><div class="emoji">🖥️</div><div class="emoji-legende">Informatique et développement</div></div>
+                    <div class="carte mb-verteau"><div class="emoji">🧪</div><div class="emoji-legende">Sciences biologiques humaines</div></div>
+                    <div class="carte mb-pamplemousse"><div class="emoji">🧠</div><div class="emoji-legende">Psychologie humaine</div></div>
+                </div>
+                <div class="multibox">
+                    <div class="carte mb-sombre"><div class="emoji">🎮</div><div class="emoji-legende">Jeux vidéos et conception</div></div>
+                    <div class="carte mb-couchant"><div class="emoji">🧩</div><div class="emoji-legende">Casse-têtes | Enigmes</div></div>
+                    <div class="carte mb-jade"><div class="emoji">🌿</div><div class="emoji-legende">Balade en pleine nature</div></div>
+                </div>
+            </div>
+        </div>
+
+        <hr id="projets">
+        <div class="part">
+            <div class="contenu">
+                <h2 >Projets</h2>
+                <div class=carrousel >
+                    <div class="arrow-left" data-sections=project data-boutons=gauche ></div>
+
+                    <div class="images" data-carrousel=project data-time=30>
+                        
+                        <div id="unesco" class="projet">
+                            <div class="video-presentation">
+                                <video width="100%" height="auto" autoplay muted loop><source src="img/Presentation UNESCO.mp4" type="video/mp4"></video>
+                            </div>
+                            <a>
+                            <div class="video-description indisponible">
+                                <h5>Projet "Mediation culturelle et numérique" en partenariat avec l'UNESCO</h5>
+                                <div class="liens">
+                                    <img width="30px" src="img/html5-icon.svg">
+                                    <img width="30px" src="img/css3-icon.svg">
+                                    <img width="30px" src="img/javascript-icon.svg">
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    
+                        <div id="python" class="projet">
+                            <div class="video-presentation">
+                                <video width="100%" height="auto" autoplay muted loop><source src="img/Presentation SPLAAATBALL.mp4" type="video/mp4"></video>
+                            </div>
+                            <a href="https://github.com/InkyYuu/Splaaatball">
+                            <div class="video-description disponible">
+                                <h5>Réalisation d'un jeu implémenté en python</h5>
+                                <div class="liens">
+                                    <img width="30px" src="img/python-icon.svg">
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    
+                        <div id="bdd" class="projet">
+                            <div class="video-presentation">
+                                <video width="100%" height="auto" autoplay muted loop><source src="img/Presentation HealthyPaws.mp4" type="video/mp4"></video>
+                            </div>
+                            <div class="video-description indisponible">
+                                <h5>Création d'un site pour un vétérinaire avec base de données connectée</h5>
+                                <div class="liens">
+                                    <img width="30px" src="img/html5-icon.svg">
+                                    <img width="30px" src="img/css3-icon.svg">
+                                    <img width="30px" src="img/php-icon.svg">
+                                    <img width="30px" src="img/postgreSQL-icon.svg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="java" class="projet">
+                            <div class="video-presentation">
+                                <video width="100%" height="auto" autoplay muted loop><source src="img/Presentation Backpack Hero.mp4" type="video/mp4"></video>
+                            </div>
+                            <a href="https://github.com/InkyYuu/Backpack-Hero">
+                            <div class="video-description disponible">
+                                <h5>Réalisation d'un jeu implémenté en java</h5>
+                                <div class="liens">
+                                    <img width="30px" src="img/java-icon.svg">
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div id="ihm" class="projet">
+                            <div class="video-presentation">
+                                <video width="100%" height="auto" autoplay muted loop><source src="img/Presentation BricoBoulot.mp4" type="video/mp4"></video>
+                            </div>
+                            <a href="https://www.figma.com/file/HNkbiTvT9BSeOfeaKBnFWu/SAE-IHM-GROUPE-8-~-BRICO-BOULOT?node-id=0%3A1&t=leKt3BXkHr1kmG9i-1">
+                            <div class="video-description disponible">
+                                <h5>Création d'une maquette ergonomique pour une application de bricolage</h5>
+                                <div class="liens">
+                                    <img width="30px" src="img/figma-icon.svg">
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div id="c" class="projet">
+                            <div class="video-presentation">
+                                <video width="100%" height="auto" autoplay muted loop><source src="img/Presentation Graphes.mp4" type="video/mp4"></video>
+                            </div>
+                            <a href="https://github.com/InkyYuu/Graphes">
+                            <div class="video-description disponible">
+                                <h5>Réflexion sur les graphes</h5>
+                                <div class="liens">
+                                    <img width="30px" src="img/python-icon.svg">
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="arrow-right" data-sections=project data-boutons=droite></div>
+                </div>
+                <div class="legend-carrousel">
+                    <div class="container-legend">
+                        <div class="square-carrousel-disponible"></div>
+                        <div class="legend-square">: Contenu disponible en cliquant sur le bandeau</div>
+                    </div>
+                    <div class="container-legend">
+                        <div class="square-carrousel-indisponible"></div>
+                        <div class="legend-square">: Contenu indisponible en cliquant sur le bandeau</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr id="professionel">
+        <div class="part">
+            <div class="contenu">
+                <h2 >Côté professionel</h2>
+                    <h4>Alternance chez : <a style="color:#fc9224;" href="https://www.idmgroup.com">IDM Group</a></h4><br><img src="img/idm-logo-grey.png" width="150px">
+                    <br><br><p>Liste des missions :</p>
+                    <ul class="missions">
+                        <li>Développement Front-End : HTML, CSS, JS - Frameworks JS (Bootstrap, jQuery, Webpack, NodeJS, etc.)</li>
+                        <li>Développement Back-End : Java 2EE, C#, PHP, Python, Dash, Kotlin, Swift, React Native, Spring, Hibernate</li>
+                        <li>Manipulation de différent types de données : XML, Solr, Elastic Search, SQL</li>
+                        <li>Participation aux réunions d’équipe pour faire état de l’avancement de ses tâches</li>
+                        <li>Être force de proposition</li>
+                        <li>Capacité à gagner en autonomie</li>
+                        <li>S’impliquer totalement et avoir le sens du devoir</li>
+                        <li>Savoir s’intégrer et communiquer avec son équipe et l’ensemble des collaborateurs</li>
+                        <li>Être disponible</li>
+                        <li>Suivre le mode de fonctionnement de l’entreprise</li>
+                    </ul><br>
+                    <div class="download ct-dowload">
+                        <a href="./include/CV BREDEAU Kellian.pdf"><img src="img/download.png">Télécharger mon CV</a>
+                    </div>
+            </div>
+        </div>
+
+        <hr id="competences">
+        <div class="part">
+            <div class="contenu">
+                <h2>Compétences</h2>
+                    
+            </div>
+        </div>
+
+        <hr id="scolaire">
+        <div class="part">
+            <div class="contenu">
+                <h2 id="scolaire">Parcours de formation</h2>
+                <div class="frise">
+                    <div class="lycee">
+                        <div class="date">
+                            <h6>2019 - 2022</h6>
+                        </div>
+                        <div class="ecole">
+                            <div class="lg-ecole">
+                                <img src="img/TDC-logo.png">
+                            </div>
+                            <a href="https://www.tdechardin.org" target="_blank"><h6>Lycée Teilhard de chardin</h6></a>
+                            <p>Baccalauréat général</p>
+                            <br>
+                            <div class="badge bd-green"><p><a href="./include/Diplôme Bac.pdf" target="_blank">Mention très bien</a></p></div>
+                            <br>
+                            <div class="badge bd-red"><p>Numérique et Sciences Informatique</p></div>
+                            <div class="badge bd-orange"><p>Mathématiques</p></div>
+                        </div>
+                    </div>
+                    <div class="licence">
+                        <div class="date">
+                            <h6>2022 - 20xx</h6>
+                        </div>
+                        <div class="ecole">
+                            <div class="lg-ecole">
+                                <img src="img/GE-logo.png">
+                            </div>
+                            <a href="https://iut.univ-gustave-eiffel.fr" target="_blank"><h6>IUT Gustave Eiffel</h6></a>
+                            <p>BUT Informatique</p>
+                            <br>
+                            <div class="badge bd-blue"><p>2ème année</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="text" id="link" value="https://kellian.awooo.fr" readonly>
+    </main>
+
+    <footer>
+        <p>Copyright © 2023 - Bredeau Kellian - Tous droits réservés</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
