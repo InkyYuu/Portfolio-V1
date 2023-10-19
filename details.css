@@ -1,0 +1,130 @@
+details {
+    width: 80%;
+    margin: 0 auto ;
+    background: #282828;
+    margin-bottom: 1rem;
+    box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+    border-radius: 5px;
+    overflow: hidden;
+}
+  
+summary {
+    font-size: 1.5em;
+    padding: 1rem;
+    display: block;
+    background: #333;
+    padding-left: 2.2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.details-box {
+    padding: 0.5em;
+    font-size:.5em;
+    text-align:center;
+    border-radius:20px;
+    height: 100px;
+    width: 150px;
+    min-height: 100px;
+    min-width: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+details h3, details > div {
+  padding-left: 2.2rem;
+  margin-top: 0.5em;
+}
+
+details .outils-details {
+  margin-bottom: 1em;
+}
+
+.details-box > img {
+    width: 50px;
+    height: 50px;
+}
+
+.details-box > p {
+    margin: auto;
+    margin-top: 5px;
+    font-family: 'Roboto-Bold';
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.competences-details {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+  
+summary:before {
+    content: '';
+    border-width: .4rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    transform: rotate(0);
+    transform-origin: .2rem 50%;
+    transition: .25s transform ease;
+}
+  
+details[open] > summary:before {
+    transform: rotate(90deg);
+}
+  
+details summary::-webkit-details-marker {
+    display:none;
+}
+
+.rouge summary {
+  background-color: #aa0603;
+}
+
+.rouge {
+  background-color: #d83734;
+}
+
+.orange summary {
+  background-color: #d85504;
+}
+
+.orange  {
+  background-color: #ed8c51;
+}
+
+.jaune summary {
+  background-color: #ca9b02;
+}
+
+.jaune {
+  background-color: #e7bd32;
+}
+
+.vert summary {
+  background-color: #499200;
+}
+
+.vert {
+  background-color: #8cc850;
+}
+
+.bleu summary {
+  background-color: #016dac;
+}
+
+.bleu {
+  background-color: #2978a7;
+}
+
+.violet summary {
+  background-color: #6919d3;
+}
+
+.violet {
+  background-color: #7e41ce;
+}
+  
