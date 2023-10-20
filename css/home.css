@@ -1,0 +1,275 @@
+/* - - - - - |            COLORS DEF.            | - - - - - */
+
+:root {
+  --blue-0: #5d6dcf;
+  --white-1: #fdfcfa;
+  --orange-1: #fc9224;
+  --blue-1: #3133b8;
+  --blue-2: #202166;
+}
+
+/* - - - - - |            POLICES IMPORT            | - - - - - */
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url('../fonts/RobotoCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Bold-Italic";
+  src: url('../fonts/RobotoCondensed-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url('../fonts/RobotoCondensed-Light.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url('../fonts/RobotoCondensed-Bold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: "Roboto-Ligth";
+  src: url('../fonts/RobotoCondensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Ligth-Italic";
+  src: url('../fonts/RobotoCondensed-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+
+/* - - - - - |            STYLE DEF.            | - - - - - */
+
+/* GENERAL */
+
+html {
+  background-color: var(--blue-2);
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fdfcfa;
+  font-family: 'Roboto-Regular';
+}
+
+main {
+  margin-right: 375px;
+  padding: 25px;
+}
+
+hr {
+  opacity: 0.5;
+}
+
+#presentation {
+  visibility: hidden;
+}
+
+h1 {
+  font-family: 'Roboto-Bold';
+  font-size: 4em;
+}
+
+h2 {
+  font-family: 'Roboto-Bold';
+  font-size: 2.75em;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Roboto-Regular';
+  font-size: 2.5em;
+  margin-top: 35px;
+}
+
+h3>a {
+  color: var(--orange-1);
+}
+
+h4 {
+  font-family: 'Roboto-Regular';
+  font-size: 2.25em;
+}
+
+p {
+  font-family: 'Roboto Light';
+  font-size: 2em;
+}
+
+.part {
+  height: 70%;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.contenu {
+  width: 100%;
+}
+
+#link {
+  position: absolute;
+  left: -9999%;
+}
+
+#copy {
+  font-size: 1em;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: auto;
+}
+
+footer {
+  width: calc(100%-375px);
+  text-align: center;
+  align-items: center;
+  background-color: var(--blue-1);
+  margin-right: 350px;
+  padding: 0.5em;
+}
+
+/* Responsive */
+
+@media (max-width: 1320px) {
+
+  main {
+    margin: 15px;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  [data-carrousel]>div.before {
+    opacity: 0.25;
+    transform: translate(-20px);
+    z-index: 0;
+    zoom: 90%;
+    max-width: 960px;
+  }
+
+  [data-carrousel]>div.after {
+    opacity: 0.25;
+    transform: translate(20px);
+    z-index: 0;
+    zoom: 90%;
+    max-width: 960px;
+  }
+
+
+  header .barre-navigation .navigation {
+    position: fixed;
+    display: block;
+    height: 100vh;
+    right: -125%;
+    overflow-y: auto;
+    transition: 0.5s;
+    transition-property: right, visibility;
+  }
+
+  header .barre-navigation .navigation.active {
+    right: 0;
+  }
+
+  .close {
+    position: absolute;
+    background: url(./img/croix.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    background-size: 35px;
+    background-position: center;
+    left: 0;
+    top: 0;
+    margin: 38px;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+  .open {
+    background: url(./img/menu.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    min-height: 50px;
+    background-size: 35px;
+    background-position: center;
+    top: 0;
+    right: 0;
+    background-color: var(--blue-1);
+    margin: 20px;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    border-radius: 15px;
+    z-index: 997;
+  }
+
+  header {
+    padding: 15px 20px;
+  }
+
+  .multibox {
+    flex-direction: column;
+    width: 100%;
+    min-width: 280px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .carte {
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.5em;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .emoji {
+    width: auto;
+    margin: 0;
+  }
+
+  .emoji-legende {
+    text-align: center;
+    display: block;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+
+  .legend-carrousel {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container-legend {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}

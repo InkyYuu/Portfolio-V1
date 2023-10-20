@@ -1,0 +1,79 @@
+.frise {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.frise>div {
+  width: 40vh;
+  margin-top: 20px;
+}
+
+.date>h6 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.ecole {
+  margin-top: 25px;
+  background: linear-gradient(135deg, #13f1fc 0%, #0470dc 100%);
+  height: 550px;
+  border-radius: 15px;
+  min-width: 300px;
+}
+
+
+.lg-ecole {
+  width: 100%;
+  display: flex;
+  min-height: 200px;
+}
+
+.lg-ecole>img {
+  width: 250px;
+  margin: auto;
+}
+
+.ecole>a>h6 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.ecole>p {
+  margin: 0;
+  text-align: center;
+}
+
+.badge {
+  background-color: var(--orange-1);
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.badge>p {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0%;
+}
+
+.bd-green {
+  background: linear-gradient(135deg, #40a848 0%, #4f7e1c 100%);
+}
+
+.bd-red {
+  background: linear-gradient(135deg, #c03f4c 0%, #d52739 100%);
+}
+
+.bd-orange {
+  background: linear-gradient(135deg, #e27f46 0%, #bd4f1c 100%);
+}
+
+.bd-blue {
+  background: linear-gradient(135deg, #437ac2 0%, #0a58be 100%);
+}
