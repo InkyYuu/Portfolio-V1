@@ -1,0 +1,73 @@
+.multibox {
+  display: flex;
+  width: 80%;
+  margin-bottom: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 875px;
+}
+
+.carte {
+  display: flex;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 200px;
+  flex: 1;
+  transition: 0.5s all ease;
+  font-family: 'Roboto-Ligth';
+  font-size: 2em;
+  align-items: center;
+}
+
+.emoji {
+  margin: auto;
+  font-size: 3em;
+  text-align: center;
+  width: 50%;
+}
+
+.emoji-legende {
+  text-align: center;
+  display: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.carte:hover {
+  flex: 2;
+}
+
+.carte:hover>.emoji-legende {
+  display: block;
+}
+
+.mb-jade {
+  background: linear-gradient(to bottom right, #184e68, #57ca85);
+  box-shadow: 5px 5px #57ca85;
+}
+
+.mb-grissard {
+  background: linear-gradient(to bottom right, #E3E3E3, #5D6874);
+  box-shadow: 5px 5px #5D6874;
+}
+
+.mb-couchant {
+  background: linear-gradient(to bottom right, #846ef4, #f17574);
+  box-shadow: 5px 5px #f17574;
+}
+
+.mb-verteau {
+  background: linear-gradient(to bottom right, #c3ec52, #0ba29d);
+  box-shadow: 5px 5px #0ba29d;
+}
+
+.mb-sombre {
+  background: linear-gradient(to bottom right, #5e2563, #65789b);
+  box-shadow: 5px 5px #65789b;
+}
+
+.mb-pamplemousse {
+  background: linear-gradient(to bottom right, #ff9851, #ff6b52);
+  box-shadow: 5px 5px #ff6b52;
+}
