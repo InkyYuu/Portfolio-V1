@@ -31,6 +31,11 @@ summary {
   margin-top: 10px;
 }
 
+details h3 {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
 details h3,
 details>div {
   padding-left: 2.2rem;
