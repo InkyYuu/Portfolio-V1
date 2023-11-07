@@ -164,3 +164,34 @@
 .legend-square {
   margin-left: 10px;
 }
+
+/* Responsive */
+
+@media (max-width: 1320px) {
+
+  [data-carrousel]>div.before {
+    opacity: 0.25;
+    transform: translate(-20px);
+    z-index: 0;
+    zoom: 90%;
+    max-width: 960px;
+  }
+
+  [data-carrousel]>div.after {
+    opacity: 0.25;
+    transform: translate(20px);
+    z-index: 0;
+    zoom: 90%;
+    max-width: 960px;
+  }
+
+  .legend-carrousel {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container-legend {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}

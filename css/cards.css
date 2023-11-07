@@ -71,3 +71,39 @@
   background: linear-gradient(to bottom right, #ff9851, #ff6b52);
   box-shadow: 5px 5px #ff6b52;
 }
+
+/* Responsive */
+
+@media (max-width: 1320px) {
+  
+  .multibox {
+    flex-direction: column;
+    width: 100%;
+    min-width: 280px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .carte {
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.5em;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .emoji {
+    width: auto;
+    margin: 0;
+  }
+  
+  .emoji-legende {
+    text-align: center;
+    display: block;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+
+}
