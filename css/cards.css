@@ -4,7 +4,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 50px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto-Bold';
   width: 100%;
   flex-wrap: wrap;
 }
@@ -35,7 +35,7 @@
   left: 25px;
   margin: 0;
   transition: inset 0.3s 0.3s ease-out;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto-Bold';
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -44,8 +44,7 @@
   opacity: 0;
   max-width: 80%;
   transition: opacity 0.3s ease-out;
-}
-.card p {
+  font-family: 'Roboto-Ligth' !important;
   font-size: 1em;
   bottom: 60px;
   left: 25px;

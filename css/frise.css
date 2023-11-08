@@ -119,5 +119,5 @@
  .radio:checked~.content div {
    max-height: 200px;
    color: var(--white-1);
-   transition: color 0.3s linear 0.3s;
+   transition: color 2.5s linear 0.3s;
  }

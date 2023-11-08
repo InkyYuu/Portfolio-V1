@@ -114,13 +114,12 @@ h4 {
 }
 
 p {
-  font-family: 'Roboto Light';
   font-size: 2em;
 }
 
 .part {
   height: 70%;
-  margin-top: 15vh;
+  margin-top: 10vh;
   margin-bottom: 15vh;
   display: flex;
   align-items: center;

@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="/css/home.css">
     <link rel="stylesheet" type="text/css" href="/css/navbar.css">
     <link rel="stylesheet" type="text/css" href="/css/partage.css">
-    <link rel="stylesheet" type="text/css" href="/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="/css/identity.css">
     <link rel="stylesheet" type="text/css" href="/css/cards.css">
     <link rel="stylesheet" type="text/css" href="/css/carrousel.css">
     <link rel="stylesheet" type="text/css" href="/css/cv.css">
@@ -87,32 +87,56 @@
         <hr id="presentation">
         <div class="part">
             <div class="contenu">
-                <h1>Kellian BREDEAU</h1>
-                <h3>👨‍💻 Développeur en devenir</h3>
+                <h2>Présentation</h2>
                 <br>
-                <p style="text-align: justify;">Bonjour, je m'appelle BREDEAU Kellian, 19 ans et étudiant en 2ème année
-                    de BUT Informatique</p>
-
                 <div class="identity-card">
                     <div class="headband">
-                        <img>
-                        <div>
-                            <p></p>
-                            <p></p>
+                        <img src="img/france-flag.png">
+                        <div class="title-card">
+                            <p class="big-title"><strong>République des développeurs</strong></p>
+                            <p class="small-title"><small>Carte nationale d'identité / Identity card</small></p>
                         </div>
-                        <img>
+                        <img src="img/france-flag.png">
                     </div>
                     <div class="main-content">
                         <div class="my-profil-picture">
-
+                            <div class="box-border">
+                                <img src="img/pdp.png">
+                            </div>
                         </div>
                         <div class="my-data">
-                            Nom
-                            Prénom
-                            Date de naissance
-                            Formation actuelle
-                            Métier visée
-                            Qualités
+                            <div class="left-col">
+                                <fieldset>
+                                    <legend><small>Nom / <em>Surname</em></small></legend>
+                                    <ul>Bredeau</ul>
+                                </fieldset>
+                                <fieldset>
+                                    <legend><small>Date de naiss / <em>Date of birth</em></small></legend>
+                                    <ul>21/05/2004</ul>
+                                </fieldset>
+                                <fieldset>
+                                    <legend><small>Métiers visés / <em>Targeted professions</em></small></legend> 
+                                    <ul>Développeur jeux-video</ul>
+                                    <ul>Développeur logiciel</ul>
+                                    <ul>Professeur d'informatique</ul>
+                                </fieldset>
+                            </div>
+                            <div class="right-col">
+                                <fieldset>
+                                    <legend><small>Prénom / <em>Given name</em></small></legend>
+                                    <ul>Kellian</ul> 
+                                </fieldset>
+                                <fieldset>
+                                    <legend><small>Etudes actuelles / <em>Current study</em></small></legend> 
+                                    <ul>BUT Informatique</ul>
+                                </fieldset>
+                                <fieldset>
+                                    <legend><small>Qualités / <em>Qualities</em></small></legend>
+                                    <ul>Perfectionniste</ul>
+                                    <ul>Attentif</ul>
+                                    <ul>Curieux</ul>
+                                </fieldset>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -140,11 +164,11 @@
                         
                     </div>
                     <div class="card">
-                        <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
+                        <img src="img/programmation.jpg"
                             alt="">
                         <div class="card-content">
                             <h2>
-                                Enigmes et casse-têtes
+                                programmation
                             </h2>
                             <p>
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem
@@ -154,11 +178,11 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
+                        <img src="img/puzzle.jpg"
                             alt="">
                         <div class="card-content">
                             <h2>
-                                Enigmes et casse-têtes
+                                Enigmes et <br>casse-têtes
                             </h2>
                             <p>
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem
@@ -168,11 +192,11 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
+                        <img src="img/psychologie.jpg"
                             alt="">
                         <div class="card-content">
                             <h2>
-                                Psychologie humaine
+                                Psychologie
                             </h2>
                             <p>
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem
@@ -593,6 +617,19 @@
                 <h2>Parcours de formation</h2>
 
                 <ul id='timeline'>
+                    <li class='work'>
+                        <input class='radio' id='work2' name='works' type='radio' checked>
+                        <div class="relative">
+                            <label for='work2'>Stage d'observation</label>
+                            <span class='date'>Novembre 2018</span>
+                            <span class='circle'></span>
+                        </div>
+                        <div class='content'>
+                            <div>
+                                <ul>Cabinet d'architectes : <em>A comme Architecte</em></ul>
+                            </div>
+                        </div>
+                    </li>
                     <li class='work'>
                         <input class='radio' id='work5' name='works' type='radio' checked>
                         <div class="relative">

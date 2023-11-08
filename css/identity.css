@@ -1,0 +1,134 @@
+.identity-card {
+    display: flex;
+    border: 2px solid var(--white-1);
+    border-radius: 15px;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    flex-direction: column;
+    background-color: var(--blue-1);
+    color: black !important;
+}
+
+.headband {
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.headband img {
+    width: 7%;
+}
+
+.big-title {
+    letter-spacing: 0.25em;
+}
+
+.small-title {
+    letter-spacing: 0.1em;
+}
+
+.title-card {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.main-content {
+    height: 100%;
+    display: flex;
+}
+
+.my-profil-picture {
+    width: 30%;
+    display: flex;
+}
+
+.my-profil-picture img {
+    width: 95%;
+    position: absolute;
+    inset: 5px;
+    border-radius: 16px;
+    z-index: 5;
+}
+
+.my-data {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-data fieldset {
+    border: none;
+    margin-left: 25px;
+}
+
+.my-data legend {
+    font-size: 1.15em;
+    text-transform: uppercase;
+}
+
+.my-data em {
+    text-transform: none;
+    font-size: 0.9em;
+}
+
+.my-data ul {
+    font-weight: bold;
+    font-size: 1.35em;
+}
+
+.left-col,
+.right-col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.box-border {
+    margin: auto;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box-border::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent, #fc9224);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+}
+
+.box-border::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent, #65faf9);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
