@@ -95,10 +95,9 @@
 }
 
 .video-description {
-
   border-radius: 10px;
   padding: 10px;
-  font-size: 20px;
+  font-size: clamp(15px, 2vw, 20px);
   color: #ffffff;
   font-weight: 500;
   position: absolute;
@@ -131,6 +130,10 @@
 
 .liens {
   margin-top: 5px;
+}
+
+.liens img {
+  width: clamp(20px, 1vw, 30px);
 }
 
 .legend-carrousel {
@@ -193,5 +196,12 @@
   .container-legend {
     margin-top: 10px;
     font-size: 20px;
+  }
+}
+
+@media (max-width:400px){
+  .video-description {
+    opacity: 0.75;
+    bottom: -50px;
   }
 }

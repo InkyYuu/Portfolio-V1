@@ -10,6 +10,8 @@
   margin: auto;
 }
 .card {
+  min-width: 270px;
+  min-height: 270px;
   margin-top: 20px;
   width: 20rem;
   height: 20rem;
@@ -30,7 +32,7 @@
   transition: filter 0.2s ease-out;
 }
 .card h2 {
-  font-size: 2em;
+  font-size: clamp(1.5em, 5vw, 2em);
   position: absolute;
   bottom: 30px;
   left: 25px;
@@ -46,7 +48,7 @@
   max-width: 80%;
   transition: opacity 0.3s ease-out;
   font-family: 'Roboto-Ligth' !important;
-  font-size: 1em;
+  font-size: clamp(0.45em, 4.25vw, 1em);
   bottom: 50px;
   left: 25px;
 }

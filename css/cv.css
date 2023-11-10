@@ -1,6 +1,6 @@
 .missions>li {
   font-family: 'Roboto-Regular';
-  font-size: 1.25em;
+  font-size: clamp(1em, 2vw, 1.75em);
   line-height: 150%;
   margin-left: 50px;
 }
