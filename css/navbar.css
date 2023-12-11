@@ -144,3 +144,9 @@ header .barre-navigation .navigation {
   }
 
 }
+
+@media (max-height: 800px) {
+  header .barre-navigation .navigation {
+    overflow-y: auto;
+  }
+}
